@@ -4,10 +4,11 @@
     <h1>My Cart</h1>
   </header>
 
-  <% if enhanced_cart.length == 0 %>
-    <div class="alert alert-danger" role="alert">
-      <h1>Your Cart is Empty!</h1>
-    </div>  
+  <% if enhanced_cart.empty? %>
+  <div class="alert alert-info" role="alert">
+    Your cart is currently empty. 
+    <a href="/" class="alert-link">Go back to the home page.</a>
+  </div>
 <% else %>
 
   <div class="panel panel-default items">
