@@ -4,7 +4,7 @@ describe("Add To Cart", () => {
   });
 
   it("cart number changes when add to cart button is pressed", () => {
-    cy.get(".products article:first-child button").click({ force: true });
+    cy.get(".products article:first-child button").click();
     cy.get(".cart-button").contains("1");
   });
 });

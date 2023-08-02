@@ -4,6 +4,7 @@
 </header>
 
 <%= form_for :user, url: '/users', class: "form-group" do |f| %>
+  
   First Name: <%= f.text_field :first_name, class: "form-control" %>
   Last Name: <%= f.text_field :last_name, class: "form-control" %>
   Email: <%= f.text_field :email, class: "form-control" %>
